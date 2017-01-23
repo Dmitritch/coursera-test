@@ -1,9 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello coursera</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>БЕЛЯШИ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'><!-- Подключаем веб-шрифт Oxygen -->
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'><!-- Подключаем веб-шрифт LORA -->
+  </head>
 <body>
-<h1>Hello Coursera. Ура, заработало!!!</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default"><!-- Навигационный блок-->
+      <div class="container"><!--класс Bootstrap-->
+        <div class="navbar-header"><!--Блок с надписью и лого, класс Bootstrap для меню навигации-->
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div><!-- Лого в отдельном блоке-->
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Беляши "Под мостом"</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>они офигительны...</span>
+            </p>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Меню</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> О нас</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Отзывы</a>
+            </li>
+
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container"></div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Время работы:</span><br>
+          ПН-ПТ: 08:10 - 22:00<br>
+          Сб-Вс: 10:00 - 20:00<br>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Адрес:</span><br>
+          По ул. Невского<br>
+          свернуть на Краснокаменную ул.
+          и по Арсенальной до кольца 21 автобуса -
+          под мостом!
+          <p>* Доставляем еду вам, она доставляет вам! В пределах окружного кольца на такси "Максим"</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"Самые лучшие беляши в городе! А я их ел и на вокзале и на рынке и даже в Талпаках"</p>
+          <p>"Отличная еда! Отличный сервис! Лучшего и пожелать трудно. Я возвращаюсь сюда за беляшами снова и снова!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Беляши "Под мостом" 2017</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
